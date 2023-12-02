@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="./assets/img/brand/favicon.svg" rel="icon" type="image/png">
     <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <header>
     <span class="nome">IEEE WIE UEM</span>
@@ -183,38 +184,6 @@
             </div>
           </div>
         </div>
-      </footer>
-
-    <script>
-        const list = document.querySelectorAll('.list');
-        function activeLink(){
-            list.forEach((item) => item.classList.remove('active'));
-            this.classList.add('active');
-        }
-        list.forEach((item) => item.addEventListener('click',activeLink))
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const links = document.querySelectorAll('.list a');
-
-            function scrollToSection(event) {
-                event.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetSection = document.getElementById(targetId);
-
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
-
-            links.forEach(link => link.addEventListener('click', scrollToSection));
-        });
-    </script>    
+      </footer> 
 </body>
 </html>
